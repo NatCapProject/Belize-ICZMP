@@ -16,8 +16,8 @@
   </script>
   
 <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
-<script src='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.js'></script>
-<link href='https://api.mapbox.com/mapbox.js/v2.2.2/mapbox.css' rel='stylesheet' />
+<script src='https://api.mapbox.com/mapbox.js/v2.2.3/mapbox.js'></script>
+<link href='https://api.mapbox.com/mapbox.js/v2.2.3/mapbox.css' rel='stylesheet' />
   
   <!--[if lte IE 8]>
     <link href='http://api.tiles.mapbox.com/mapbox.js/v1.3.1/mapbox.ie.css' rel='stylesheet' >
@@ -48,14 +48,13 @@
 </head>
 
 <body>
-	<div id="dialog" title="2014 Belize ICZMP">
+	<div id="dialog" title="Belize ICZMP">
 	  <font size = "2"><font face="Helvetica Neue, Helvetica, sans-serif">
 	  <h4>Welcome to the map portal for Belize's<br>Integrated Coastal Zone Mgm't Plan!</h4>
 	  <p>
 	  <u>Instructions</u>:<br>
-	  <li><i>Quick Zoom</i><br>> click coastal planning region links at the left -or- hold shift key and draw box<br>&nbsp;&nbsp;<img src="DrawBox.jpg"></li><p></p>
-	  <li><i>Add/Remove Layers</i><br>> hover over layers pallete in upper left<br>&nbsp;&nbsp;<img src="LayerPallete.jpg"></li><p></p>
-	  <li><i>Explore Nature's Value</i><br>> add "InVEST Outputs" and click shapes to display economic values</li>
+	  <li><i>Quick Zoom</i><br>> Hold shift key and draw box<br>&nbsp;&nbsp;<img src="DrawBox.jpg"></li><p></p>
+	  <li><i>Explore Nature's Value</i><br>> select "InVEST Outputs" and click map shapes to display economic values</li>
 	  </font>
 	</div>
 
@@ -106,24 +105,6 @@
 		}
 	</style>
 
-<div id='map-ui'>
-  <ul>
-  <br><p><br><p><br><p><br><p>
-    <center>
-	<basefont color="black" face="Helvetica Neue, Helvetica, sans-serif"><p class="shadowed"><span><b>Coastal Planning Regions:</b></span></p>
-	<li><a href='#' data-position2='18.255899,-88.136302'>Northern Region</a></li>
-    <li><a href='#' data-position2='17.988199,-87.9198'>Ambergris Caye</a></li>
-    <li><a href='#' data-position1='17.4109,-87.9334'>Central Region</a></li>
-	<li><a href='#' data-position3='17.736799,-87.981601'>Caye Caulker</a></li>
-    <li><a href='#' data-position2='17.380401,-87.754704'>Turneffe Atoll</a></li>
-	<li><a href='#' data-position2='17.3281,-87.482403'>Lighthouse Reef Atoll</a></li>
-	<li><a href='#' data-position2='16.9025,-87.979502'>South Northern Region</a></li>
-    <li><a href='#' data-position2='16.535801,-88.149904'>South Central Region</a></li>
-	<li><a href='#' data-position2='16.1389,-88.500301'>Southern Region</a></li>
-	<li><a href='#' data-position4='17.1456, -87.0029'>All BELIZE</a></li>
-	</center>
-  </ul>
-</div>
 
 <div id='map'></div>
 
@@ -139,13 +120,13 @@
 <div id='legend-content' style='display: none;'>
 <div class='my-legend'>
 <b>Project Resources:</b><br>
- <li><a href="http://www.geointerest.frih.org/NatCap/Scenario_Descriptions.html" target="_blank">2025 Scenario Descriptions</a></li>
- <li><a href="http://www.geointerest.frih.org/NatCap/HTML_report/areachange_IM.html" target="_blank">Zones of Human Use Summary</a></li>
- <li><a href="http://www.geointerest.frih.org/NatCap/ES_Summary.html" target="_blank">Ecosystem Services Synthesis</a></li>
+ <li><a href="http://www.geointerest.frih.org/NatCap/img/scenarios_bz.png" target="_blank"><u>2025 Scenario Descriptions</u></a></li>
+ <li><a href="http://www.geointerest.frih.org/NatCap/ES_Summary.html" target="_blank"><u> Synthesis of Nature's Value</u></a></li>
+  <li><a href="http://msp.naturalcapitalproject.org/msp_concierge_master/docs/Arkema_etal_2015_PNAS.pdf" target="_blank"><u>Science Publication</a></u> (Arkema et al. 2015)</li>
 <hr>
 <b>Risk to Habitats:</b>&nbsp;<span style='color:#001AA0'><font size='5'>&#9632;</font></span> Low&nbsp;<span style='color:#FFCC00'><font size='5'>&#9632;</font></span> Medium&nbsp;<span style='color:#C00000'><font size='5'>&#9632;</font></span> High<br>
-<a href="http://geointerest.frih.org/NatCap/HRA_CD.html" target="_blank">Diagram</a> of how habitat risk is calculated<br>
-Risk by Scenario: <a href="http://geointerest.frih.org/NatCap/HRA_Corals.html" target="_blank">Coral</a> || <a href="http://geointerest.frih.org/NatCap/HRA_Mangroves.html" target="_blank">Mangrove</a> || <a href="http://geointerest.frih.org/NatCap/HRA_Seagrass.html" target="_blank">Seagrass</a></font></b><br>Source: <a href="http://ncp-dev.stanford.edu/~dataportal/invest-releases/documentation/current_release/habitat_risk_assessment.html" target="_blank">InVEST Habitat Risk Assessment model</a>
+<a href="http://geointerest.frih.org/NatCap/HRA_CD.html" target="_blank"><u>Diagram</u></a> of how habitat risk is calculated<br>
+Risk by Scenario: <a href="http://geointerest.frih.org/NatCap/HRA_Corals.html" target="_blank"><u>Coral</u></a> || <a href="http://geointerest.frih.org/NatCap/HRA_Mangroves.html" target="_blank"><u>Mangrove</u></a> || <a href="http://geointerest.frih.org/NatCap/HRA_Seagrass.html" target="_blank"><u>Seagrass</u></a></font></b><br>Source: <a href="http://ncp-dev.stanford.edu/~dataportal/invest-releases/documentation/current_release/habitat_risk_assessment.html" target="_blank"><u>InVEST Habitat Risk Assessment model</u></a>
 </div>
   <style type='text/css'>
     .my-legend .legend-title {
@@ -188,7 +169,7 @@ Risk by Scenario: <a href="http://geointerest.frih.org/NatCap/HRA_Corals.html" t
 
 <script type='text/javascript'>
 	L.mapbox.accessToken = 'pk.eyJ1IjoiZ2VvaW50ZXJlc3QiLCJhIjoiQ2czbnlDMCJ9.pQ-_LxzHCL6WqMm5rJrEWw';
-	var map = L.mapbox.map('map', 'mapbox.streets', { zoomControl: false }).setView([17.1456, -87.0029], 8);
+	var map = L.mapbox.map('map', 'mapbox.streets', { zoomControl: false }).setView([17.0056, -87.2029], 8);
 	map.options.maxZoom = 13;map.options.minZoom = 6;
 	  
 	map.legendControl.addLegend(document.getElementById('legend-content').innerHTML);
@@ -196,7 +177,7 @@ Risk by Scenario: <a href="http://geointerest.frih.org/NatCap/HRA_Corals.html" t
 	L.control.scale({ position: 'bottomleft' }).addTo(map);
 	  
 	L.control({ position: 'topleft' })
-	map.attributionControl.setPrefix('<a href="http://www.naturalcapitalproject.org/">Mapping portal by Gregg Verutes</a>');
+	map.attributionControl.setPrefix('<a href="http://www.geointerest.frih.org/">Mapping portal by Gregg Verutes</a>');
 	  
 	var BelizeBaseMap = L.mapbox.gridLayer('geointerest.BelizeBaseMap');
 	map.addLayer(BelizeBaseMap);
@@ -223,7 +204,7 @@ Risk by Scenario: <a href="http://geointerest.frih.org/NatCap/HRA_Corals.html" t
 		'Marine Recreation': L.mapbox.tileLayer('geointerest.BelizeMarineRec'),
 		'Fishing Area': L.mapbox.tileLayer('geointerest.BelizeFishingArea'),
 		'Agricultural Runoff': L.mapbox.tileLayer('geointerest.BelizeAgRunoff'),
-		'Special Development Areas': L.mapbox.tileLayer('geointerest.BelizeSDA'),
+		//'Special Development Areas': L.mapbox.tileLayer('geointerest.BelizeSDA'),
 		'Oil Exploration': L.mapbox.tileLayer('geointerest.BelizeOil'),
 		'Marine Transportation': L.mapbox.tileLayer('geointerest.BelizeTransport'),
 		'Dredging': L.mapbox.tileLayer('geointerest.BelizeDredge'),
@@ -236,7 +217,7 @@ Risk by Scenario: <a href="http://geointerest.frih.org/NatCap/HRA_Corals.html" t
 		'Coastal Protection': L.mapbox.tileLayer('geointerest.BelizeCP'),
 		'Coastal Vulnerability': L.mapbox.tileLayer('geointerest.BelizeCV'),
 		'Coastal Planning Regions<hr><b>Human Use Activities</b>': L.mapbox.tileLayer('geointerest.BelizeBaseMap').addTo(map),
-	}, {position: 'topleft'}).addTo(map);
+	}, {position: 'topleft', collapsed: false}).addTo(map);
 
 	map.on('layeradd', function(e) {
 		if (e.layer.getTileJSON) {
@@ -249,28 +230,7 @@ Risk by Scenario: <a href="http://geointerest.frih.org/NatCap/HRA_Corals.html" t
 		}
 	  });
 
-	document.getElementById('map-ui').onclick = function(e) {
-    var pos = e.target.getAttribute('data-position1');
-    if (pos) {
-        var loc = pos.split(',');
-        map.setView(loc, 10);
-    }
-	var pos = e.target.getAttribute('data-position2');
-    if (pos) {
-        var loc = pos.split(',');
-        map.setView(loc, 11);
-    }
-	var pos = e.target.getAttribute('data-position3');
-    if (pos) {
-        var loc = pos.split(',');
-        map.setView(loc, 12);
-    }
-	var pos = e.target.getAttribute('data-position4');
-    if (pos) {
-        var loc = pos.split(',');
-        map.setView(loc, 8);
-    }
-}
+window.onload = init();
 
 </script>
 </body>
